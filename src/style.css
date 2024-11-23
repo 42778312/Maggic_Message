@@ -1,0 +1,64 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #101524;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  
+}
+
+
+.container {
+  position: fixed;
+  width: 100%;
+  text-align: left;
+  
+
+}
+
+.close-button {
+  position: fixed;
+  top: 5px;
+  left: 5px;
+  background: transparent;
+  color: white;
+  border: none;
+  font-size: 25px;
+  cursor: pointer;
+  margin-right: 10px;
+  margin-left: 10px;
+  
+}
+
+.magic-message {
+  position: absolute;
+  padding-top: 15px;
+  font-size: 22px;
+  margin-top: 30px;
+  font-weight: bold;
+  padding-left: 10px;
+  margin-left: 40px;
+  
+}
+
+.line {
+  width: 100%;
+  padding: 0.5px;
+  background-color: white;
+  border: none;
+  margin-top: 40px;
+}
+.header{
+  display: flex;
+  align-items: center;
+  
+}
+
