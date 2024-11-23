@@ -11,7 +11,10 @@ node_modules
 dist
 dist-ssr
 *.local
-*.gitignore
+
+# Ignore itself
+.gitignore
+
 
 # Editor directories and files
 .vscode/*
