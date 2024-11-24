@@ -1,4 +1,4 @@
-import { app, BrowserWindow } from "electron";
+import { app, BrowserWindow, ipcMain } from "electron";
 import { createRequire } from "node:module";
 import { fileURLToPath } from "node:url";
 import path from "node:path";
@@ -30,6 +30,10 @@ function createWindow() {
   } else {
     win.loadFile(path.join(RENDERER_DIST, "index.html"));
   }
+  ipcMain.on("update-window-size", (_event, contentHeight) => {
+    const newHeight = Math.min(contentHeight + 100, 800);
+    win == null ? void 0 : win.setSize(800, newHeight);
+  });
 }
 app.on("window-all-closed", () => {
   if (process.platform !== "darwin") {
